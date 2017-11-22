@@ -1,22 +1,23 @@
 
 <?php
+    require_once 'productQueryDb.php';   // load the php command functions (only load once and terminate if can't load the file)*/
+
     //Search items names
     //panelBrand & panelSize
     //inverterBrand & inverterSize
 
     //Deciding which search button is chosen
-     if ($_GET["panelButton"]) {
+     if ($_GET["panelButton"]) {  // URL Variable $_GET
         $searchTerm = $_GET["panelSize"];   // get the name of search item
     } else if ($_GET["inverterButton"]) {
         $searchTerm = $_GET["inverterSize"];
     } else {
 
     }
-    require_once "productQueryDb.php";   // load the php command functions */
-    $dataPanel = getPanels($searchTerm);    // get result from the php functions */
+    $dataPanel = getPanels($searchTerm);    // get result from the productQueryDb.php functions */
     $dataInverter = getInverters($searchTerm);
 
-?> 
+?>
 
 <!DOCTYPE html>
 <html>
@@ -70,12 +71,6 @@
                     <div class="box">
                         <h2>Search Panels</h2>
                          <form>
-                         <!--   <select name="panelBrand" id="panelBrand">
-                                <option value="">Panel Brand</option>
-                                <option value="Canadian Solar">Canadian Solar</option>
-                                <option value="Tianwei">Tianwei</option>
-                                <option value="Q-Cell">Q-Cell</option>
-                            </select> -->
                             <select name="panelSize" id="panelSize">
                                 <option value="">Panel Size</option>
                                 <option value="250W">250W</option>
@@ -89,13 +84,6 @@
                     <div class="box">
                         <h2>Search Inverters</h2>
                           <form>
-                          <!--
-                            <select name="inverterBrand" id="inverterBrand">
-                                <option value="">Inverter Brand</option>
-                                <option value="Growatt">Growatt</option>
-                                <option value="Delta">Delta</option>
-                                <option value="SMA">SMA</option>
-                            </select> -->
                             <select name="inverterSize" id="inverterSize">
                                 <option value="">Inverter Size</option>
                                 <option value="3KW">3KW</option>
