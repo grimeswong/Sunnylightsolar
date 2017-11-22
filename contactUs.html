@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" media="(min-width: 768px)" href="desktop.css"/> <!-- desktop version -->
+        <link rel="stylesheet" type="text/css" media="(max-width: 767px)" href="tablet.css"/> <!-- tablet version -->
+        <meta name="viewport" content = "initial-scale = 1.0"/>
+        <title>Sunnylight Solar</title>
+        <!-- <script
+            src="https://maps.googleapis.com/maps/api/js">
+        </script> -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8DRxucLsFA04OXCevze-kUHegL6KneG0&callback=initMap"
+  type="text/javascript"></script>
+
+
+    </head>
+    <body>
+
+        <div class="header">
+            <img id="logo" src="images/SunnylightLogo.png" alt="Sunnylight Logo"/>
+            <div id="headContact">
+            <p id="headFirst">For Enquiry Please Call<p>
+            <p id="headPhone">07 3123 4567<p>
+            <!--<p id="headEmail">info@sunnylightsolar.com.au</p> -->
+            <a id ="headEmail" href ="mailto:grimes.wong.griffithuni.edu.au">info@sunnylightsolar.com.au</a>
+            </div>
+        </div>
+
+        <div class="ads">
+            <img src="images/contactUs/Contact-Us.jpg" alt="Contact Us">
+        </div>
+
+        <div id="navigation">
+            <nav>
+                <ul>
+                    <li><a href="index.php"/>Home</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="products.php">Solar Products</a></li>
+                    <li><a href="systems.html">Solar Systems</a></li>
+                    <li><a href="newsletter.php">Subscribe Newsletter</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="mainbody"> <!-- consist two divisions -->
+
+            <div class="content" id=contact>
+                <h2>SunnyLight Solar Head Office / Warehouse</h2>
+                </br>
+                <p>Address: Address: 2 / 53 Boyland Avenue, Coopers Plains, QLD 4108</p>
+                </br>
+                <p>Phone: 07 3123 4567</p>
+                </br>
+                <p><span>Email: <a id ="emailAboutUs" href ="mailto:grimes.wong.griffithuni.edu.au">info@sunnylightsolar.com.au</a></span></p>
+                </br>
+                <p><span>Websites: <a id="website" href="http://www.suunylightsolar.com.au"> http://www.sunnylightsolar.com.au</a> </span></p>
+
+            </div>
+
+            <div id="map">
+                <h2>Our Location</h2>
+                </br>
+                <div id=mapSquare>
+
+
+                    <script>
+                        var myCenter=new google.maps.LatLng(-27.564547, 153.025671);
+
+                        function initialize() {
+                            var mapProp = {
+                              center:myCenter,
+                              zoom:15,
+                              mapTypeId:google.maps.MapTypeId.ROADMAP
+                            };
+                            var map=new google.maps.Map(document.getElementById("mapSquare"),mapProp);
+                            var marker=new google.maps.Marker({
+                                position:myCenter,
+                                animation:google.maps.Animation.BOUNCE
+                            });
+                            marker.setMap(map);
+
+                            var infowindow = new google.maps.InfoWindow({
+                                content:"SunnyLight Solar"
+                            });
+
+                            infowindow.open(map,marker);
+                        }
+                        google.maps.event.addDomListener(window, 'load', initialize);
+                    </script>
+                </div>
+            </div>
+
+        </div>  <!-- mainbody end tag -->
+
+        <div class="footer">
+            <div id="footerIn">
+                <div id="sitemap">
+                   <h3 id="sitemapText">Site Map</h3>
+                    <ul>
+                        <li><a href="index.php"/>Home</a></li>
+                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><a href="products.php">Solar Products</a></li>
+                        <li><a href="systems.html">Solar Systems</a></li>
+                        <li><a href="newsletter.php">Subscribe Newsletter</a></li>
+                        <li><a href="contactUs.html">Contact Us</a></li>
+                    </ul>
+
+                </div>
+                <div id="contactdetails">
+                    <dt>SunnyLight Solar</dt>
+                    </br>
+                    <h1>07 3123 4567</h1>
+                    </br>
+                    <dd><a id="emailBottom" href ="mailto:grimes.wong.griffithuni.edu.au">info@sunnylightsolar.com.au</a></dd>
+                    </br>
+                    <dd>Address: 2/53 Boyland Avenue,</dd>
+                    <dd>Coopers Plains, QLD 4108</dd>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <h5>Sunnylight Solar Copyright 2016</h5>
+        </div>
+
+    </body>
+</html>

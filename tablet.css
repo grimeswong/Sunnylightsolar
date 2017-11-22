@@ -1,0 +1,636 @@
+/*body, div, h1, h2, h3, h4, .header, .ads, .mainbody, ul, leftElement, rightElement, .footer{    /*to remove browser default settings */
+
+    * { /* set all the elements */
+    margin:0 auto; /* top and bottom "0", both sides is auto */
+    padding:0;    /* reset to "0"to avoid broswer setting */
+    /*max-width: 1024px; /* minus 25px (974+50px=1024px)for each padding */
+}
+
+h1 {
+    /*padding: 20px 45px 0; */
+    /*background-color: blue; /*tester*/
+}
+
+h2 {
+    margin:0;
+}
+
+p {
+    font-family: Arial,sans-serif;
+}
+
+img {
+    width:100%;
+}
+
+.header {
+    margin: 0 auto;
+    /*display:flex;*/
+    /*flex-wrap:nowrap;
+    flex-direction:row;
+    /*height:250px; */
+    max-width: 768px;
+    padding:0 25px ;    /* top 25px; right 25px; bottom 0px; left 25px */
+    text-align: right;
+    color:black;
+}
+
+#logo {
+    display:block;
+    width:80%;
+    /*flex-grow:1;*/
+}
+
+#headContact {
+    display:block;
+    margin-top: 20px;
+    /*flex-grow:1;*/
+    text-align: center;
+    /*align-self:center;*/
+}
+
+#headFirst{
+    font-family:sans-serif;
+    font-size:2em;
+    font-weight:bold;
+}
+
+#headPhone{
+    font-family:sans-serif;
+    font-size:3em;
+    font-weight:bold;
+}
+
+#headEmail{
+    font-family:sans-serif;
+    font-size:1.5em;
+    font-weight:bold;
+    text-decoration: none;
+    color:black;
+}
+
+.ads {
+    /*height:275px;*/
+    max-width: 768px;
+    margin:25px auto;
+    /*padding:25px 25px 0px 25px; */
+    border-radius: 20px;
+    text-align: center;
+    background-color: white;
+    /*background-image: url("images/1600x900-sky-blue.jpg");*/
+    background-repeat: no-repeat;
+}
+
+#homeAds {
+    width: 100%;
+}
+
+#mainbody {
+    margin: 0 auto;
+    width: 100%;
+    display:flex;    /* display:flex must only place in the container */
+    flex-direction: column;
+    /*background-color:orange; /*for test the display block only */
+}
+
+#navigation {
+    margin:10px 20px;
+    /*background-color:#d22709; /* red */
+    border-radius: 20px;
+}
+
+
+ul {
+    /*margin:0; /* remove the browser default settings if setting is 0 */
+    /*margin:0 auto;
+    /*max-width: 974px;*/
+    border-radius: 20px;
+}
+
+li {
+    align-items: center;
+    justify-content:space-around;
+}
+
+#navigation ul {
+    display:flex;    /* display:flex must only place in the container */
+    flex-direction:column;
+    padding: 0;    /* remove the browser default settings if setting is 0*/
+    width:100%;
+    list-style-type: none;    /* remove the dot of list */
+    /*background-color:#d22709;*/
+    /*background-color:green;    /*tester*/
+}
+
+#navigation li {
+    width: 80%;
+}
+
+#navigation a {
+    display: block;
+    margin: 10px;
+    /*width: 100%;*/
+    padding:25px 20px;
+    text-align: center;
+    align-self: center;
+    font-family: Arial, Courier;
+    font-weight: bold;
+    background-color: #d22709;    /*color: red*/
+    /*background-color: green;    /*tester*/
+    border-radius: 15px;
+}
+
+
+.content {
+    margin: 20px auto;
+    padding: 25px 40px;
+    /*height: 1000px;  /* dont set heigth that the height will be vary depends on the size of images*/
+    flex-grow: 2;
+    background-color: #D8D8D8;
+    border-radius: 20px;
+}
+
+/*.content img {
+    display: block;
+    margin: 10px auto;
+}*/
+
+
+#enquiry {
+    margin: 20px auto;
+    padding: 25px 0;
+    /*height: 400px; */
+    flex-grow: 1;
+    /*width:100%;*/
+    background-color: green;
+    border-radius: 20px;
+}
+
+#enquiry h2{
+    color:white;
+    text-align:center;
+}
+
+form {
+    /*margin:0 auto;*/
+    text-align: center;
+}
+
+input {
+    margin: 10px;
+    padding:10px;
+    border-radius:5px;
+    font-family: sans-serif;
+    width: 80%;
+}
+
+.textWidth {
+    width:80%;
+}
+
+textarea {
+    margin: 10px auto;
+    padding:10px;
+    border-radius:5px;
+    width: 80%;
+}
+
+.submit-button {
+    border-radius:5px;
+    background-color:white;
+    color:black;
+    font-size:16px;
+    font-weight:bold;
+}
+
+.submit-button:hover {
+    background-color:black;
+    color:white;
+}
+
+.footer {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d22709;    /*color: red*/
+    border-radius: 20px;
+}
+
+
+
+#sitemap {
+    /*float: left;*/
+    text-align: center;
+    padding: 25px;
+    color: white;
+}
+
+#sitemap ul{
+    list-style-type: none;    /* remove disc*/
+}
+
+#sitemap h3 {
+    text-align:center;
+    font-size: 1.5em;
+}
+
+#contactdetails {
+   text-align: center;
+    color: white;
+}
+
+.copyright {
+    margin:25px auto;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+#navigation a:link {
+    color:white;
+    text-decoration: none;    /* remove the underline */
+
+}
+
+#navigation a:visited {
+    color:white;
+}
+
+#navigation a:hover{
+    color:#d22709;
+    background-color:white;
+
+    /*text-decoration: underline; */
+}
+
+#sitemap a:active {
+    color:darkgreen;
+    background-color:black;
+    text-decoration: underline;
+}
+
+#sitemap a:link {
+    color:white;
+    text-decoration: none;    /* remove the underline */
+
+}
+
+#sitemap a:visited {
+    color:white;
+}
+
+#sitemap a:hover{
+    color:#d22709;
+    background-color:white;
+
+    /*text-decoration: underline; */
+}
+
+#sitemap a:active {
+    color:darkgreen;
+    text-decoration: underline;
+}
+
+dt {
+    font-weight: bold;
+    font-size: 22px;
+    font-family: Arial,Verdana;
+}
+
+dd {
+    font-size: 18px;
+    font-family: sans-serif
+}
+
+#emailBottom{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif
+}
+
+/*
+    About Us
+*/
+#aboutUs {
+    margin: 20px auto;
+    padding: 25px 40px;
+    /*height: 1000px;  /* dont set heigth that the height will be vary depends on the size of images*/
+    flex-grow:1;
+    background-color: #D8D8D8;
+    border-radius: 20px;
+}
+
+#aboutAds img {
+   width: 80%;
+}
+
+#emailAboutUs {
+   font-family:sans-serif;
+    font-size:1em;
+    font-weight:bold;
+    text-decoration: none;
+    color:black;
+}
+
+/*
+    Solar Products
+*/
+
+#serachBoxOutline {
+    margin: 40px auto;
+    max-width: 984px;
+    /*height: 400px; */
+    border-color: #d22709; /**/
+    border-style: solid;
+    border-radius: 20px;
+}
+
+#searchBox {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-around;
+}
+
+#searchH2 {
+    margin: 20px;
+    padding: 0 25px;
+}
+
+#serachBoxOutline p {
+    margin: 20px;
+    padding: 25px;
+    display:block;
+}
+
+.box {
+    margin: 20px;
+    padding:  15px;
+    /*height: 300; */
+    color:white;
+    background-color: green;
+    border-radius: 20px;
+    flex-grow:1;
+}
+
+#searchBox h2 {
+    text-align: center;
+}
+
+select {
+    margin: 10px auto;
+    padding:10px;
+    border-radius:5px;
+    font-family: sans-serif;
+    width: 80%;
+}
+
+.solarProducts {
+    display:flex;
+    align-items:center;
+    /*justify-content:flex-start;*/
+    flex-direction:column;
+    margin: 40px auto;
+    max-width: 984px;
+    /*height: 400px;*/
+    border-color: green;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+#resultBox {
+    margin: 20px;
+    padding: 25px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: green;
+
+}
+
+#showPanelResult {
+    margin: 20px auto;
+    width:100%;
+}
+
+#showPanelResult th {
+    padding: 20px 0;
+    font-family: Arial;
+    font-size:0.8em;
+    color:white;
+    background-color: green;
+}
+
+#showPanelResult td{
+    padding: 20px 0;
+    font-family: Arial;
+    font-size:0.8em;
+    color:black;
+
+}
+
+.solarProducts h1{
+    margin-bottom: 20px;
+}
+
+.leftProduct {
+    padding:45px;
+    flex-grow:1;
+    text-align: left;
+    /*background-color:green; /*tester*/
+}
+
+.leftProduct h2{
+    font-family: Georgia, sans-serif;
+}
+.leftProduct ul {
+    padding-left: 25px;
+    font-family: Georgia, sans-serif;
+    list-style-type:circle;
+}
+
+.downloadLink {
+    padding:10px 20px;
+    color: white;
+    background-color: green;
+    text-decoration: none;
+    font-family: sans-serif;
+    border-radius: 20px;
+}
+
+.rightProduct {
+    padding:20px;
+    /*flex-grow:1;*/
+    text-align: center;
+    /*background-color:blue; /*tester*/
+}
+
+.rightProduct img {
+   width:100%;
+}
+
+
+
+/*
+    Solar System
+*/
+#averageProduction {
+
+    margin:20px auto 30px;
+    padding: 15px 0;
+
+    /*background-color: grey; /* for test display block only */
+}
+
+th h2 {
+    font-weight: bold;
+    color: black;
+}
+
+th, td {
+    text-align: center;
+    padding: 0 5px;
+    font-size:0.8em;
+    font-family: Arial;
+}
+
+#averageProduction tr:nth-child(odd){
+    color: green;
+    background-color: white;
+
+}
+
+#averageProduction tr:nth-child(even){
+    color: white;
+    background-color: green;
+}
+
+.solarSystem {
+    margin: 40px auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-start;
+
+    /*width: 20px auto; */
+    /*height: 400px;*/
+}
+
+.solarSystem h1{
+    margin-bottom: 20px;
+}
+
+#solarBorder {
+    margin:20px auto;
+    max-width: 984px;
+    border-color: green;
+    border-style: solid;
+    border-radius: 20px;
+
+}
+
+.solarDecription{
+    /*display:block;*/
+    margin:0 20px;
+    padding: 10px 20px 25px;
+    font-family:Helvetica,sans-serif;
+    /*background-color: orange; /*tester*/
+
+}
+
+#systemh1 {
+    margin-bottom: 10px;
+    padding: 20px 45px 0;
+}
+
+
+.leftElement {
+    padding:45px;
+    flex-grow:1;
+    text-align: left;
+    /*background-color:green; /*tester*/
+    border-color: green;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+.leftElement ul {
+    font-family: sans-serif;
+    list-style-type: square;
+}
+
+.rightElement {
+    padding:30px;
+    flex-grow:1;
+    text-align: center;
+    /*background-color:blue; /*tester*/
+}
+
+
+
+.titleCenter {
+    text-align: center;
+}
+
+/*
+    Subscibe Newsletter
+*/
+
+.content p:nth-child(1) {
+    font-weight:bold;
+}
+
+#subscribe {
+    margin: 20px auto;
+    padding: 25px;
+    flex-grow:1;
+
+    background-color: green;
+    border-radius: 20px;
+}
+
+#subscribe h2{
+    color:white;
+    text-align:center;
+}
+
+#subscribeButton {
+    margin-top: 50px;
+}
+
+/*
+    Contact Us
+*/
+
+#contact {
+    margin: 0;
+    font-weight: bold;
+}
+
+#website {
+    text-decoration: none;
+}
+
+#map {
+    margin: 20px 0;
+    /*max-width:767px; */
+    min-width: 200px;
+    height:500px;
+    padding: 25px 25px;
+    /*height: 1000px;  /* dont set heigth that the height will be vary depends on the size of images*/
+    flex-grow:0;
+    background-color: green;
+    border-radius: 20px;
+}
+
+#map h2 {
+    color:white;
+    text-align:center;
+}
+
+#mapSquare {    /* can't set to class */
+    Position: relative;
+    /*width:100%;*/
+    max-height: 400px;
+    height:100%;
+
+}
