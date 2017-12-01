@@ -70,7 +70,7 @@
                 <div id="searchBox">
                     <div class="box">
                         <h2>Search Panels</h2>
-                         <form>
+                         <form action="#serachBoxOutline">
                             <select name="panelSize" id="panelSize">
                                 <option value="">Panel Size</option>
                                 <option value="250W">250W</option>
