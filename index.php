@@ -13,7 +13,6 @@
             <div id="headContact">
             <p id="headFirst">For Enquiry Please Call<p>
             <p id="headPhone">07 3123 4567<p>
-            <!--<p id="headEmail">info@sunnylightsolar.com.au</p> -->
             <a id ="headEmail" href ="mailto:grimes.wong.griffithuni.edu.au">info@sunnylightsolar.com.au</a>
             </div>
         </div>
@@ -53,7 +52,6 @@
             <div id="enquiry">
                 <h2>Enquiry Form</h2>
                 <form>
-                <!-- <form action="MAILTO:grimes.wong@griffithuni.edu.au" method="post" enctype="text/plain"> -->
                         <input type="text" name="name" id="name" class="textWidth" placeholder="Name"/>
                         <input type="text" name="contactNo" id="contactNo" placeholder="Contact Number"/>
                         <input type="text" name="email" id="email" placeholder="Email"/>

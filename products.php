@@ -34,7 +34,6 @@
             <div id="headContact">
             <p id="headFirst">For Enquiry Please Call<p>
             <p id="headPhone">07 3123 4567<p>
-            <!--<p id="headEmail">info@sunnylightsolar.com.au</p> -->
             <a id ="headEmail" href ="mailto:grimes.wong.griffithuni.edu.au">info@sunnylightsolar.com.au</a>
             </div>
         </div>
@@ -78,7 +77,6 @@
                                 <option value="270W">270W</option>
                             </select>
                             <input class="submit-button" type="submit" name="panelButton" value="Panel Search" method="get"/>
-                            <!--<input class="submit-button" type="submit" value="Panel Search" method="get" action="products.php"/> -->
                         </form>
                         </div>
                     <div class="box">
