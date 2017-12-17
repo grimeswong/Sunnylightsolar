@@ -9,7 +9,7 @@
     <body>
 
         <div class="header">
-            <img id="logo" src="images/SunnylightLogo.png" alt="Sunnylight Logo"/>
+            <img id="logo" src="./images/SunnylightLogo.png" alt="Sunnylight Logo"/>
             <div id="headContact">
             <p id="headFirst">For Enquiry Please Call<p>
             <p id="headPhone">07 3123 4567<p>
@@ -19,7 +19,7 @@
         </div>
 
         <div class="ads">
-            <img id="homeAds" src="images/home/green-energy.jpg" alt="Green Energy"/>
+            <img id="homeAds" src="./images/home/green-energy.jpg" alt="Green Energy"/>
         </div>
 
         <div id="navigation">
