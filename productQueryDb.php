@@ -25,7 +25,7 @@
       }
       $ret = $db->query($sql);
       if(!$ret){
-        echo $db->lastErrorMsg();
+        // echo $db->lastErrorMsg();
         return [];
       } else {
          while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
@@ -53,7 +53,7 @@
       }
       $ret = $db->query($sql);
       if(!$ret){
-        echo $db->lastErrorMsg();
+        // echo $db->lastErrorMsg();
         return [];
       } else {
          while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
